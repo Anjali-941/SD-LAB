@@ -1,0 +1,5 @@
+
+while read a;do
+echo ${a//linux/shell scripting}
+done<ques5.txt>ques5.txt.t
+mv ques5.txt{.t},
