@@ -1,0 +1,108 @@
+                                           Cycle-2-Version Control using git
+
+1:Git repository                                                                              Date : 9/3/’20
+
+PROGRAM 1 : GIT REPOSITORY
+
+AIM:
+
+0. Install and initialize git and perform the following operations
+a. Create a text file in your git directory.
+b. Configure your git with your credentials.
+c. Configure the default editor to your favorite editor
+d. Stage your files
+e. Create your first commit
+f. Push to remote repository
+The following exercises must be done by a team of four students.
+1. Create team account.
+2. Create empty repository in any git remote repository service and add
+collaborators.
+3. Leader must create the first commit.
+4. All members must clone the remote repository.
+5. Each member must create a feature branch each and add features to them(any mod)
+6. Commit changes to branches.
+7. Push the branches.
+8. View Graph.
+9. Leader must make changes to the master.
+10. All member must rebase their branches to the position of latest commit in master.
+10. Merge all branches to master.
+11. Cherry pick commits from each branch created earlier.
+12. View Status.
+13. View History.
+14. Delete all branches.
+
+
+PROGRAM CODE :
+
+
+Setting the git configurations in terminal.
+
+Use the below commands to set git configurations.
+
+             git config --global user.name Anjali-941
+            
+             git config --global user.email anjalivenugobal@gmail.com
+            
+             git config --global core.edit gedit
+             
+Adding a file in your git initialized folder to staging area,Use the command :
+
+             git add file.txt 
+
+We can use following command to see both tracked and untracked files.
+
+             git status 
+
+To commit the added file to local repository, Use the command :
+
+             git commit -m "a meaninful comment".
+
+To clone the entire github repository , use the command :
+
+            git clone https://github.com/Anjali-941/first-repo.git.
+
+To push the committed file to our git repository , use the below command.
+
+           git pull push https://github.com/Anjali-941/first-repo.git
+
+           git push https://github.com/Anjali-941/first-repo.git master
+              
+To creating a new branch and branch operations. Use the following commands :-
+    
+           git checkout -b repos  /*to create a branch named repos*/
+              
+           git branch             /*to show all branches*/
+
+          git pull push https://github.com/Anjali-941/first-repo.git 
+           
+          git push https://github.com/Anjali-941/first-repo.git repos                          
+To merge the branch to our master branch,use following commands.
+
+               git checkout master /*switching to master branch*/
+               
+               git merge repos    /*merging the branch repos*/
+
+To cherry pick a commit done in repos branch to master branch, use the command :
+
+               git cherry-pick commitid
+
+To view the operations in a graph format , use the command:
+
+               git log –-graph
+
+To rebase the branch to master branch , use the command :
+ 
+               git checkout repos
+
+               git rebase master /* rebasing branch to master branch*/
+
+To view the history of git commits, use the command :
+
+               git log --oneline
+
+To delete a feature branch , use the command :
+
+               git branch -d repos /*deletes repos branch*/
+
+
+
